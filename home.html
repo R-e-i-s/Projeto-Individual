@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aperture Science</title>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div
+      class="header"
+      style="background-image: url(assets/dark-honeycomb.png)"
+    >
+      <div class="container">
+        <div class="titulo">
+          <img src="assets/logo.svg" alt="Welcome to Aperture Science" />
+          <h1>
+            Aperture Science <br />
+            <span>Laboratories</span>
+          </h1>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Nossas Invenções</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Onde Estamos</a></li>
+          <li style="cursor: default">|</li>
+          <a href="#"><li class="login">Login</li></a>
+        </ul>
+      </div>
+    </div>
+    <!-- FIM DO HEADER -->
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="assets/carrossel1.jpg" alt="" />
+            <div class="text-block-1">
+              <h1>
+                Seja Bem Vindo, à <br />
+                Aperture Science Laboratories
+              </h1>
+              <p>What a beautiful sunrise</p>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <img src="assets/carrossel2.jpg" alt="" />
+          </li>
+          <li class="splide__slide">
+            <img src="assets/carrossel3.jpg" alt="" />
+          </li>
+          <li class="splide__slide">
+            <img src="assets/carrossel4.png" alt="" />
+          </li>
+          <li class="splide__slide">
+            <img src="assets/carrossel5.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
+<script>
+  const splide = new Splide(".splide", {
+    type: "fade",
+    width: "100%",
+    height: "499px",
+    rewind: true,
+    speed: 1000,
+    easing: "ease",
+    autoplay: false,
+    interval: 4000,
+    arrowPath: 'm15',
+  }).mount();
+</script>
