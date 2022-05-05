@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aperture Science</title>
-    <link rel="icon" href="" />
+    <link rel="icon" href="assets/logo.svg" />
     <link rel="stylesheet" href="css/global.css" />
     <link
       rel="stylesheet"
@@ -15,10 +15,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <div
-      class="header"
-      style="background-image: url(assets/dark-honeycomb.png)"
-    >
+    <div class="header">
       <div class="container">
         <div class="titulo">
           <img src="assets/logo.svg" alt="Welcome to Aperture Science" />
@@ -38,17 +35,22 @@
       </div>
     </div>
     <!-- FIM DO HEADER -->
-    <section class="splide" aria-label="Splide Basic HTML Example">
+    <section class="splide" aria-label="Carrossel da Introdução">
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide">
             <img src="assets/carrossel1.jpg" alt="" />
             <div class="text-block-1">
+              <a href="#sobrenos">
               <h1>
                 Seja Bem Vindo, à <br />
                 Aperture Science Laboratories
               </h1>
-              <p>What a beautiful sunrise</p>
+              </a>
+              <p>
+                Aperture Science™ é a líder em inovação científica,<br> e queremos você
+                para nos ajudar a atingir nosso objetivo!
+              </p>
             </div>
           </li>
           <li class="splide__slide">
@@ -58,14 +60,31 @@
             <img src="assets/carrossel3.jpg" alt="" />
           </li>
           <li class="splide__slide">
-            <img src="assets/carrossel4.png" alt="" />
+            <img src="assets/carrossel5.jpg" alt="" />
           </li>
           <li class="splide__slide">
-            <img src="assets/carrossel5.jpg" alt="" />
+            <img src="assets/carrossel4.png" alt="" />
           </li>
         </ul>
       </div>
     </section>
+    <div id="sobrenos" class="sobrenos" style="background-image: url(assets/wave.svg)">
+      <div class="container">
+        <div class="sn_imagem">
+          <img src="assets/cavejohnsonyoung.jpg" alt="" />
+          <h3>Cave Johnson</h3>
+          <i>Criador e Fundador da Aperture Science™</i>
+        </div>
+        <div class="sn_texto">
+          <p></p>
+        </div>
+        <div class="sn_botao">
+          <a href="#">
+            <button class="btn_sn">Saiba Mais</button>
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 <script>
@@ -78,6 +97,5 @@
     easing: "ease",
     autoplay: false,
     interval: 4000,
-    arrowPath: 'm15',
   }).mount();
 </script>
