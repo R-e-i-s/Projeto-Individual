@@ -35,40 +35,65 @@
       </div>
     </div>
     <!-- FIM DO HEADER -->
-    <section class="splide" aria-label="Carrossel da Introdução">
+    <section id="main" class="splide" aria-label="Carrossel da Introdução">
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide">
             <img src="assets/carrossel1.jpg" alt="" />
             <div class="text-block-1">
               <a href="#sobrenos">
-              <h1>
-                Seja Bem Vindo, à <br />
-                Aperture Science Laboratories
-              </h1>
+                <h1>
+                  Seja Bem Vindo, à <br />
+                  Aperture Science Laboratories
+                </h1>
               </a>
               <p>
-                Aperture Science™ é a líder em inovação científica,<br> e queremos você
-                para nos ajudar a atingir nosso objetivo!
+                Aperture Science™ é a líder em inovação científica,<br />
+                e queremos você para nos ajudar a atingir nosso objetivo!
               </p>
             </div>
           </li>
           <li class="splide__slide">
             <img src="assets/carrossel2.jpg" alt="" />
+            <div class="text-block-2">
+              <h2>Fazemos o que devemos porque a gente pode!</h2>
+            </div>
           </li>
           <li class="splide__slide">
             <img src="assets/carrossel3.jpg" alt="" />
+            <div class="text-block-3">
+              <h2>
+                Todos participantes são recompensados com bolo<br />ao final dos
+                testes 🎂😋!
+              </h2>
+            </div>
           </li>
           <li class="splide__slide">
             <img src="assets/carrossel5.jpg" alt="" />
+            <div class="text-block-4">
+              <h2>
+                Licenciados pela Aperture Science™,<br />os melhores cientistas
+                do mundo<br />estão aqui!
+              </h2>
+            </div>
           </li>
           <li class="splide__slide">
             <img src="assets/carrossel4.png" alt="" />
+            <div class="text-block-5">
+              <h2>
+                <q>A empresa de ciências aplicadas mais fod* da Terra!</q><br />
+                <span>Cave Johnson, 1970</span>
+              </h2>
+            </div>
           </li>
         </ul>
       </div>
     </section>
-    <div id="sobrenos" class="sobrenos" style="background-image: url(assets/wave.svg)">
+    <section
+      id="sobrenos"
+      class="sobrenos"
+      style="background-image: url(assets/wavesn.svg)"
+    >
       <div class="container">
         <div class="sn_imagem">
           <img src="assets/cavejohnsonyoung.jpg" alt="" />
@@ -76,7 +101,15 @@
           <i>Criador e Fundador da Aperture Science™</i>
         </div>
         <div class="sn_texto">
-          <p></p>
+          <h2>Sobre Nós</h2>
+          <p>
+            Criada em 1940 por Cave Johnson, inicialmente como uma empresa de
+            cortinas de banheiro, a Aperture Science virou a definição de
+            qualidade e inovação no campo da ciência moderna, criando diversas
+            invenções com nomes longos e complicados com a intenção de tudo
+            parecer muito mais complexo e científico do que realmente é, para
+            obter recursos governamentais com muito mais sucesso!
+          </p>
         </div>
         <div class="sn_botao">
           <a href="#">
@@ -84,18 +117,50 @@
           </a>
         </div>
       </div>
-    </div>
+    </section>
+    <section
+      id="tecnologia"
+      class="tech"
+      style="background-image: url(assets/wavetech.svg)"
+    >
+      <div class="container">
+        <div class="tech_card">
+          <div class="tech_text">
+            <h2>Nossas Invenções</h2>
+            <p>
+              Com tecnologia de ponta, e a quantidade ideal de testes para saber
+              a qualidade de cada novo equipamento, a Aperture Science garante
+              total segurança* e precisão com todas as nossas invenções.
+            </p>
+          </div>
+          <div class="tech_botao">
+            <a href="#">
+              <button class="btn_tech">Ver Invenções</button>
+            </a>
+          </div>
+        </div>
+        <div class="tech__div_img">
+          <img src="assets/portalweapon.png" class="tech_img" alt="" style="background-image: url(assets/hip-square.png);">
+          <h3>Aperture Science Handheld Portal Device</h3>
+        </div>
+      </div>
+    </section>
+    <section id="localizacao" class="loc" style="background-image: url(assets/);">
+
+    </section>
   </body>
 </html>
 <script>
-  const splide = new Splide(".splide", {
-    type: "fade",
-    width: "100%",
-    height: "499px",
-    rewind: true,
-    speed: 1000,
-    easing: "ease",
-    autoplay: false,
-    interval: 4000,
-  }).mount();
+  document.addEventListener("DOMContentLoaded", function () {
+    new Splide("#main", {
+      type: "fade",
+      width: "100%",
+      height: "499px",
+      rewind: true,
+      speed: 1000,
+      easing: "ease",
+      autoplay: true,
+      interval: 4000,
+    }).mount();
+  });
 </script>
