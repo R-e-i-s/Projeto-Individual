@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 60%;
+            text-align: center;
+            border: 3px solid palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz">
+        <div class="container">
+            <div id="card1" class="card">
+                <h2>Teste seu conhecimento da Aperture Science!</h2>
+                <h3>Qual dessas empresas de inovação é a melhor do mundo?</h3>
+                <ul>
+                    <li onclick="certo1()">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li onclick="errado1()">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li onclick="errado1()">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li onclick="errado1()">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                </ul>
+                <span id="spanCard1" style="visibility: hidden; align-self: center;"></span>
+                <button id="btnCard1" onclick="continuar1()" style="visibility: hidden; align-self: center;">Continuar</button>
+            </div>
+            <div id="card2" class="card" style="display: none;">
+                <h2>Teste seu conhecimento da Aperture Science!</h2>
+                <h3>Quem é o melhor criador do mundo?</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                </ul>
+                <span id="spanCard2"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function certo1() {
+        spanCard1.style.visibility = "block"
+        btnCard1.style.display = "block"
+    }
+</script>

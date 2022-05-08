@@ -140,13 +140,40 @@
           </div>
         </div>
         <div class="tech__div_img">
-          <img src="assets/portalweapon.png" class="tech_img" alt="" style="background-image: url(assets/hip-square.png);">
+          <img
+            src="assets/portalweapon.png"
+            class="tech_img"
+            alt=""
+            style="background-image: url(assets/hip-square.png)"
+          />
           <h3>Aperture Science Handheld Portal Device</h3>
         </div>
       </div>
     </section>
-    <section id="localizacao" class="loc" style="background-image: url(assets/);">
-
+    <section
+      id="localizacao"
+      class="loc"
+      style="background-image: url(assets/waveloc.svg)"
+    >
+      <div class="container">
+        <div class="card_loc">
+          <div class="mostrar_loc">
+            <span id="spanMapa">X</span>
+          </div>
+          <h4>--Onde Nós Estamos!--</h4>
+          <h5>
+            Mapa removido por questões legais. Favor visitar a página
+            <a href="">Onde Estamos</a> para mais informações.
+          </h5>
+        </div>
+        <div class="txt_btn_loc">
+          <div class="textin_loc">
+            <h2></h2>
+            <span></span>
+          </div>
+          <button class="btn_loc"></button>
+        </div>
+      </div>
     </section>
   </body>
 </html>
@@ -163,4 +190,10 @@
       interval: 4000,
     }).mount();
   });
+</script>
+<script>
+  var blink = document.getElementById("spanMapa");
+  setInterval(function () {
+    blink.style.opacity = blink.style.opacity == 0 ? 1 : 0;
+  }, 500);
 </script>
