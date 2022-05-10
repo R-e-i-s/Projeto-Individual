@@ -30,84 +30,7 @@ body {
   background-color: #e4e4e4;
 }
 
-/* HEADER */
-.header {
-  color: #0099ff;
-  background-color: #0a0a0a;
-  border-bottom: 3px solid #0099ff;
-  padding: 0px 10px;
-}
-.header .container {
-  justify-content: space-around;
-}
-.titulo {
-  display: flex;
-  width: 40%;
-  justify-content: center;
-  align-items: center;
-  cursor: default;
-}
-.titulo h1 {
-  font-style: italic;
-  margin-right: 10px;
-  position: relative;
-}
-.titulo h1::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  border-radius: 4px;
-  background-color: rgb(255, 100, 0);
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 0.25s ease-in-out;
-}
-.titulo h1:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}
-.titulo span {
-  font-size: 25px;
-  color: rgb(255, 100, 0);
-  letter-spacing: 9px;
-}
-.titulo img {
-  height: 85px;
-  width: 85px;
-  margin-right: 10px;
-}
-.container ul {
-  color: rgb(255, 100, 0);
-  display: flex;
-  width: 50%;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-  font-size: larger;
-  letter-spacing: 0.5px;
-}
-ul a {
-  text-decoration: none;
-  color: rgb(255, 100, 0);
-}
-ul a:hover {
-  text-decoration: underline;
-}
-ul a:active {
-  color: rgb(200, 50, 0);
-  border-color: rgb(200, 50, 0);
-}
-.login {
-  border: 2px solid rgb(255, 100, 0);
-  border-radius: 12px 0px 12px 0px;
-  padding: 5px 15px;
-  transition: 0.2s;
-}
 
-/* FIM DO HEADER */
 /* SLIDER */
 
 #main .splide__slide img {
@@ -383,7 +306,7 @@ ul a:active {
   font-size: 1.5em;
   padding: 10px;
   text-align: center;
-  text-decoration: line-through 50% #000;
+  text-decoration: line-through 30% #000;
   cursor: default;
   user-select: none;
 }
@@ -411,4 +334,85 @@ ul a:active {
   font-size: 40px;
   user-select: none;
   cursor: default;
+}
+
+.txt_btn_loc{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 80%;
+  padding: 0px 20px;
+  border: 3px solid #ae02dd;
+  outline: 3px solid #202020;
+  box-shadow: inset 0px 0px 0px 3px #202020;
+  transition:  .25s;
+}
+
+.txt_btn_loc:hover{
+  background-color: #202020;
+  outline: 3px solid rgb(15, 15, 15);
+  box-shadow: inset 0px 0px 0px 3px rgb(15, 15, 15);
+}
+
+.textin_loc{
+  height: 50%;
+}
+
+.textin_loc h2{
+font-size: 2em;
+}
+
+.textin_loc span{
+  font-size: 1.2em;
+}
+
+.textin_loc b{
+  text-decoration: line-through 110% #fff;
+}
+
+.border_loc{
+  height: 3px;
+  background-color: #ae02dd;
+  outline: 3px solid #202020;
+  transition: .25s;
+}
+
+.txt_btn_loc:hover .border_loc{
+  outline: 3px solid rgb(15, 15, 15);
+}
+
+.botao_loc{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.btn_loc{
+  background-color: #202020;
+  color: #fff;
+  border: 3px solid #ae02dd;
+  outline: 3px solid rgb(15, 15, 15);
+  box-shadow: 0px 0px 0px 3px inset rgb(15, 15, 15);
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.btn_loc:hover{
+  background-color: rgb(15, 15, 15);
+}
+.btn_loc:active{
+  outline-color: #050505;
+  background-color: rgb(5, 5, 5);
+  box-shadow: 0px 0px 0px 3px inset rgb(5, 5, 5);
+}
+
+.botao_loc img{
+  width: 40%;
+  height: 80%;
+  border: 6px solid #fff;
+  outline: 3px solid #202020;
 }

@@ -7,6 +7,7 @@
     <title>Aperture Science</title>
     <link rel="icon" href="assets/logo.svg" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header_footer.css" />
     <link
       rel="stylesheet"
       href="node_modules/@splidejs/splide/dist/css/splide.min.css"
@@ -25,7 +26,7 @@
           </h1>
         </div>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="home.html">Home</a></li>
           <li><a href="#">Nossas Invenções</a></li>
           <li><a href="#">Sobre Nós</a></li>
           <li><a href="#">Onde Estamos</a></li>
@@ -104,7 +105,7 @@
           <h2>Sobre Nós</h2>
           <p>
             Criada em 1940 por Cave Johnson, inicialmente como uma empresa de
-            cortinas de banheiro, a Aperture Science virou a definição de
+            cortinas de banheiro, a Aperture Science™ virou a definição de
             qualidade e inovação no campo da ciência moderna, criando diversas
             invenções com nomes longos e complicados com a intenção de tudo
             parecer muito mais complexo e científico do que realmente é, para
@@ -129,7 +130,7 @@
             <h2>Nossas Invenções</h2>
             <p>
               Com tecnologia de ponta, e a quantidade ideal de testes para saber
-              a qualidade de cada novo equipamento, a Aperture Science garante
+              a qualidade de cada novo equipamento, a Aperture Science™ garante
               total segurança* e precisão com todas as nossas invenções.
             </p>
           </div>
@@ -146,7 +147,7 @@
             alt=""
             style="background-image: url(assets/hip-square.png)"
           />
-          <h3>Aperture Science Handheld Portal Device</h3>
+          <h3>Aperture Science™ Handheld Portal Device</h3>
         </div>
       </div>
     </section>
@@ -160,18 +161,53 @@
           <div class="mostrar_loc">
             <span id="spanMapa">X</span>
           </div>
-          <h4>--Onde Nós Estamos!--</h4>
+          <h4>---Onde Nós Estamos!---</h4>
           <h5>
             Mapa removido por questões legais. Favor visitar a página
-            <a href="">Onde Estamos</a> para mais informações.
+            <a href="#">Onde Estamos</a> para mais informações.
           </h5>
         </div>
         <div class="txt_btn_loc">
           <div class="textin_loc">
-            <h2></h2>
-            <span></span>
+            <h2>Nossas Localizações</h2>
+            <span
+              >Nós da Aperture Science™ temos <b>duas</b> bases de operações,
+              ambas localizadas nos <b>EUA</b>. Acesse a página Onde Estamos e
+              venha ver qual delas está mais próxima de você!</span
+            >
           </div>
-          <button class="btn_loc"></button>
+          <div class="border_loc"></div>
+          <div class="botao_loc">
+            <button class="btn_loc">Venha nos Conhecer</button>
+            <img src="assets/predio_aperture.png  " alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="paginas_footer">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="">Nossas<br> Invenções</a></li>
+            <li><a href="">Sobre Nós</a></li>
+            <li><a href="">Onde<br> Estamos</a></li>
+            <li><a href="">Cadastro</a></li>
+            <li><a href="">Login</a></li>
+          </ul>
+        </div>
+        <div class="titulo">
+          <img src="assets/logo.svg" alt="Welcome to Aperture Science" />
+          <h1>
+            Aperture Science <br />
+            <span>Laboratories</span>
+          </h1>
+        </div>
+        <div class="contatenos">
+          <h2>Nos Acompanhe 😁</h2>
+          <img src="assets/facebook-square-brands.svg" alt="">
+          <img src="assets/instagram-square-brands.svg" alt="">
+          <img src="assets/twitter-square-brands.svg" alt="">
         </div>
       </div>
     </section>
@@ -188,6 +224,8 @@
       easing: "ease",
       autoplay: true,
       interval: 4000,
+      resetProgress: false,
+      keyboard: "global",
     }).mount();
   });
 </script>
